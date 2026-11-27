@@ -1,13 +1,16 @@
-import React from "react";
 
-function Navbar() {
+import React from 'react'
+
+const Navbar = () => {
   return (
-    <nav className="bg-blue-600 text-white p-4">
+    <nav className="bg-blue-600 p-4 text-white flex justify-between">
       <h1 className="text-xl font-bold">
-        Student Management System
+        Lost and Found Portal
       </h1>
+
+      <h2>Admin</h2>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

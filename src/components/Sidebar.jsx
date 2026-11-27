@@ -1,16 +1,42 @@
-import React from "react";
 
-function Sidebar() {
+import React from 'react'
+
+const Sidebar = () => {
   return (
-    <div className="bg-gray-200 w-full md:w-60 p-5">
-      <h2 className="font-bold mb-4">Menu</h2>
-      <p className="p-2">Dashboard</p>
-      <p className="p-2">Students</p>
-      <p className="p-2">Courses</p>
-      <p className="p-2">Faculty</p>
-      <p className="p-2">Settings</p>
+    <div className="bg-white w-56 min-h-screen p-5 shadow">
+
+      <h2 className="text-lg font-bold mb-5">
+        Menu
+      </h2>
+
+      <ul className="space-y-4">
+        <li className="bg-blue-500 text-white p-3 rounded">
+          Dashboard
+        </li>
+
+        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
+          Report Lost Item
+        </li>
+
+        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
+          Report Found Item
+        </li>
+
+        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
+          Search Items
+        </li>
+
+        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
+          My Reports
+        </li>
+
+        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
+          Settings
+        </li>
+      </ul>
+
     </div>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar
