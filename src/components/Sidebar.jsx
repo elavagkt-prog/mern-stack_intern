@@ -1,38 +1,19 @@
 
-import React from 'react'
+//import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
     <div className="bg-white w-56 min-h-screen p-5 shadow">
 
-      <h2 className="text-lg font-bold mb-5">
-        Menu
-      </h2>
+      <h2 className="font-bold mb-5">Menu</h2>
 
       <ul className="space-y-4">
-        <li className="bg-blue-500 text-white p-3 rounded">
-          Dashboard
-        </li>
-
-        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
-          Report Lost Item
-        </li>
-
-        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
-          Report Found Item
-        </li>
-
-        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
-          Search Items
-        </li>
-
-        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
-          My Reports
-        </li>
-
-        <li className="p-3 hover:bg-gray-100 rounded cursor-pointer">
-          Settings
-        </li>
+        <li><Link to="/">Dashboard</Link></li>
+        <li><Link to="/report">Report Item</Link></li>
+        <li><Link to="/lost">Lost Items</Link></li>
+        <li><Link to="/found">Found Items</Link></li>
+        <li><Link to="/reports">My Reports</Link></li>
       </ul>
 
     </div>
